@@ -32,10 +32,14 @@
         android:text="Riscos devem ser corridos, porque o maior perigo é não arriscar nada"
         />
 
-
-
-
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_centro" />
 
 
 
