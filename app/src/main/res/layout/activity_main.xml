@@ -7,10 +7,15 @@
     tools:context=".MainActivity">
 
 
-<!--    <View-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="90dp"-->
-<!--        -->
+    <View
+        android:id="@+id/view_Superior"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/new_azul"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 
 <TextView
     android:id="@+id/text_saudacao"
@@ -19,9 +24,9 @@
     android:text="Olá, Kotlin"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/view_Superior"
     android:textSize="18sp"
-    android:layout_marginTop="50dp"/>
+    android:layout_marginTop="20dp"/>
 
     <TextView
         android:id="@+id/text_centro"
@@ -41,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:layout_marginTop="30dp"
-        android:background="@color/purple_200"
+        android:background="@color/new_azul"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_centro"
@@ -54,9 +59,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_novaFrase"
-        android:layout_width="wrap_content"
+        android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:text="Nova Frase"
+        android:background="@color/new_azul"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
