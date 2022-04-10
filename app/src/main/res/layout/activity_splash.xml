@@ -6,4 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
+    <View
+        android:id="@+id/view_principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/new_azul2"
+        />
+
+    <TextView
+        android:id="@+id/txt_superior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vamos Começar?"
+        android:textSize="33sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/cabin"
+        app:layout_constraintLeft_toLeftOf="@id/view_principal"
+        app:layout_constraintRight_toRightOf="@id/view_principal"
+        app:layout_constraintTop_toTopOf="@id/view_principal"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/txt_central"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@id/view_principal"
+        app:layout_constraintRight_toRightOf="@id/view_principal"
+        app:layout_constraintTop_toTopOf="@id/view_principal"
+        app:layout_constraintBottom_toBottomOf="@id/view_principal"
+        android:textColor="@color/white"
+        android:hint="Qual o seu nome?"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/cabin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SALVAR"
+        android:background="@color/new_azul"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/view_principal"
+        app:layout_constraintRight_toRightOf="@id/view_principal"
+        app:layout_constraintLeft_toLeftOf="@id/view_principal"
+        android:layout_marginBottom="40dp"/>
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
