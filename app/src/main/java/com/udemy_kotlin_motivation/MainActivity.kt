@@ -23,9 +23,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        handleUserName()
+
+
+
+        //Eventos
         binding.btnNovaFrase.setOnClickListener(this)
 
     }
+
+
+
+
 
     //Contrato View.OnClickListener assinado, implementar membros
     override fun onClick(view: View) {
@@ -34,4 +43,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(this,"Cliquei",Toast.LENGTH_SHORT).show()
         }
     }
+
+
+    private fun handleUserName(){
+        val nameTela = SecurityPreferences(this).getString("USER_NAME")
+        binding.textSaudacao.text = "Olá, $nameTela !"
+    }
+
+
+
 }

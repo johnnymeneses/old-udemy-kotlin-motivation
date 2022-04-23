@@ -45,6 +45,9 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
 
         if (name != "") {
 
+            //Salvei o nome do usuario
+            SecurityPreferences(this).storeString("USER_NAME",name)
+
             //Intenção
             startActivity(Intent(this, MainActivity::class.java))
             finish() //destruir tela atual
