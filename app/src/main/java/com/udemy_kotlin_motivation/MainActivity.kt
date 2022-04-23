@@ -3,6 +3,7 @@ package com.udemy_kotlin_motivation
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.udemy_kotlin_motivation.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View) {
         if (view.id == R.id.btn_novaFrase) {
             println("Cliquei")
+            Toast.makeText(this,"Cliquei",Toast.LENGTH_SHORT).show()
         }
     }
 }

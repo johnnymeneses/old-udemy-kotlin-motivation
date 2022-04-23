@@ -17,7 +17,7 @@
         android:id="@+id/txt_superior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vamos Começar?"
+        android:text="Vamos começar?"
         android:textSize="33sp"
         android:textColor="@color/white"
         android:fontFamily="@font/cabin"
@@ -27,7 +27,7 @@
         android:layout_marginTop="40dp"/>
 
     <EditText
-        android:id="@+id/txt_central"
+        android:id="@+id/text_nome"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -42,7 +42,7 @@
         android:fontFamily="@font/cabin" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_savarNome"
+        android:id="@+id/button_SalvarNome"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="SALVAR"
