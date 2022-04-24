@@ -1,4 +1,4 @@
-package com.udemy_kotlin_motivation
+package com.udemy_kotlin_motivation.infra
 
 import android.content.Context
 import android.content.SharedPreferences

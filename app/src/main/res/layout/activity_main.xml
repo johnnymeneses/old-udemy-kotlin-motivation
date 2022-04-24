@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".UI.MainActivity">
 
 
     <View
@@ -23,7 +23,7 @@
         android:visibility="visible"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:tint="@color/white"
+        app:tint="@color/gray"
         app:layout_constraintBottom_toBottomOf="@id/view_Superior"
         app:layout_constraintLeft_toLeftOf="@id/view_Superior"
         app:layout_constraintRight_toLeftOf="@id/imageEmoji"
@@ -36,6 +36,7 @@
         android:visibility="visible"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        app:tint="@color/gray"
         app:layout_constraintBottom_toBottomOf="@id/view_Superior"
         app:layout_constraintLeft_toRightOf="@id/imageAll"
         app:layout_constraintRight_toRightOf="@id/imageSun"
@@ -48,6 +49,7 @@
         android:visibility="visible"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        app:tint="@color/gray"
         app:layout_constraintBottom_toBottomOf="@id/view_Superior"
         app:layout_constraintLeft_toRightOf="@id/imageEmoji"
         app:layout_constraintRight_toRightOf="@id/view_Superior"
@@ -68,7 +70,7 @@
     android:layout_marginTop="20dp"/>
 
     <TextView
-        android:id="@+id/text_centro"
+        android:id="@+id/text_mensagem"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -89,7 +91,7 @@
         android:elevation="5dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_centro"
+        app:layout_constraintTop_toBottomOf="@id/text_mensagem"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
         />

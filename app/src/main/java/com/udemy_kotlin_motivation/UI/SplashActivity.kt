@@ -1,10 +1,13 @@
-package com.udemy_kotlin_motivation
+package com.udemy_kotlin_motivation.UI
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.udemy_kotlin_motivation.infra.MotivationConstants
+import com.udemy_kotlin_motivation.R
+import com.udemy_kotlin_motivation.infra.SecurityPreferences
 import com.udemy_kotlin_motivation.databinding.ActivitySplashBinding
 
 class SplashActivity : AppCompatActivity(), View.OnClickListener {
@@ -45,7 +48,7 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
         if (name != "") {
 
             //Salvei o nome do usuario
-            SecurityPreferences(this).storeString("USER_NAME",name)
+            SecurityPreferences(this).storeString(MotivationConstants.key.USER_NAME,name)
 
             //Intenção
             startActivity(Intent(this, MainActivity::class.java))
