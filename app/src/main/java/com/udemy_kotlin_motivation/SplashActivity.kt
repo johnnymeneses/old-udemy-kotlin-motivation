@@ -40,7 +40,6 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
     fun handleSave() {
 
 
-
         val name = binding.textNome.text.toString()
 
         if (name != "") {

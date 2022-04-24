@@ -37,6 +37,7 @@
         app:layout_constraintBottom_toBottomOf="@id/view_principal"
         android:textColor="@color/white"
         android:hint="Qual o seu nome?"
+        android:inputType="textPersonName"
         android:textColorHint="@color/white"
         android:textSize="25sp"
         android:fontFamily="@font/cabin" />
