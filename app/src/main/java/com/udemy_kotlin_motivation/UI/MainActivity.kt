@@ -20,28 +20,28 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private var categoryID = MotivationConstants.FILTER.ALL
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_main)
 
-        //Esconder barra de navegação
-        supportActionBar?.hide()
+            //Esconder barra de navegação
+            supportActionBar?.hide()
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+            binding = ActivityMainBinding.inflate(layoutInflater)
+            setContentView(binding.root)
 
-        handleUserName()
-        handleFilter(R.id.imageAll)
-
-
-        //Eventos
-        binding.btnNovaFrase.setOnClickListener(this)
-        binding.imageAll.setOnClickListener(this)
-        binding.imageEmoji.setOnClickListener(this)
-        binding.imageSun.setOnClickListener(this)
+            handleUserName()
+            handleFilter(R.id.imageAll)
 
 
-    }
+            //Eventos
+            binding.btnNovaFrase.setOnClickListener(this)
+            binding.imageAll.setOnClickListener(this)
+            binding.imageEmoji.setOnClickListener(this)
+            binding.imageSun.setOnClickListener(this)
+
+
+        }
 
 
     //Contrato View.OnClickListener assinado, implementar membros
